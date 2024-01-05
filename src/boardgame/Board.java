@@ -45,10 +45,9 @@ public class Board {
         return positionExists(position.getRow(),position.getColumn());
 
     }
-    public boolean thereIsAPiece(Position position){
+    public boolean thereIsAPiece(Position position){ //nao entendi tão bem
         if(!positionExists(position))
             throw new BoardException("Position not on the board");
-        return piece(position)!=null;
-
+        return piece(position)!=null; //não entendi tão bem o que essa função piece faz.
     }
 }
